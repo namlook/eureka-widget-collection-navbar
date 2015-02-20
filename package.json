@@ -1,7 +1,7 @@
 {
   "name": "eureka-widget-collection-navbar",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "An actionable navbar for Eureka collection.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -35,7 +35,8 @@
     "glob": "^4.0.5"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "eureka-widget"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
