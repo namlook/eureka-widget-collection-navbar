@@ -16,10 +16,6 @@ An actionable navbar for Eureka collection. Usage:
                                 // setting to null will hide it
                                 label: 'auto',
 
-                                // the navbar contains an input to filter the collection
-                                // set to false if don't want it
-                                collectionFilter: true,
-
                                 // main actions
                                 actions: [
                                     {

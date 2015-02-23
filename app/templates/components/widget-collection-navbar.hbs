@@ -17,18 +17,6 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-            {{#if displayCollectionFilter}}
-                <form class="navbar-form navbar-left" role="search">
-                  <div class="form-group">
-                    {{input type="search" value=currentController.search class="form-control"}}
-                    {{#if search}}
-                        <a {{action "clear"}}><span class="glyphicon glyphicon-remove"></span></a>
-                    {{/if}}
-                  </div>
-                </form>
-            {{/if}}
-
-
             {{#if hasActions}}
                 <ul class="nav navbar-nav navbar-right">
                     {{#if hasPrimaryActions}}
