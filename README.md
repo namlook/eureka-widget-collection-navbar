@@ -16,6 +16,11 @@ An actionable navbar for Eureka collection. Usage:
                                 // setting to null will hide it
                                 label: 'auto',
 
+                                // the route when clicking on the label.
+                                //  - if null or undefined, the route will be <resource>.collection.index
+                                //  - if false, the label won't be clickable
+                                labelRoute: null,
+
                                 // main actions
                                 actions: [
                                     {

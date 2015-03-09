@@ -9,7 +9,11 @@
                 <span class="icon-bar"></span>
             </button>
             {{#if label}}
-                {{#link-to routeModel.meta.collectionIndexViewPath class="navbar-brand"}} {{label}} {{/link-to}}
+                {{#if labelRoute}}
+                    {{#link-to labelRoute class="navbar-brand"}} {{{label}}} {{/link-to}}
+                {{else}}
+                    <span class="navbar-brand">{{{label}}}</span>
+                {{/if}}
             {{/if}}
 
         </div>
