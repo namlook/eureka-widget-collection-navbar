@@ -24,7 +24,7 @@
             {{#if hasActions}}
                 <ul class="nav navbar-nav navbar-right">
                     {{#if hasPrimaryActions}}
-                        {{#each actionConfig in primaryActions}}
+                        {{#each primaryActions as |actionConfig|}}
                             {{collection-navbar-action-item
                                 actionConfig=actionConfig
                                 currentRouteName=currentRouteName
@@ -44,7 +44,7 @@
                                 {{/if}}
                             </a>
                             <ul class="dropdown-menu" role="menu">
-                                {{#each actionConfig in secondaryActions}}
+                                {{#each secondaryActions as |actionConfig|}}
                                     {{#if actionConfig.divider}}
                                         <li class="divider"></li>
                                     {{else}}

@@ -7,7 +7,7 @@ export default Ember.Component.extend(CollectionActionableItem, {
 
     classNameBindings: ["isActive:active"],
 
-    isActive: function() {
+    isActive: Ember.computed('currentRouteName', 'route', function() {
         return this.get('currentRouteName') === this.get('route');
-    }.property('currentRouteName', 'route')
+    })
 });
